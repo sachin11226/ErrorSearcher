@@ -9,3 +9,6 @@ def detect(path):
         error = f"{str(a)}: {e}"
         error =f"https://www.google.com/search?q={error} stack overflow"
         webbrowser.open(error)
+    finally :
+        if __file__!=path:
+            print("Error not Found!!!!")
